@@ -1,3 +1,8 @@
 .sneh{
     background-image: url("https://1000logos.net/wp-content/uploads/2017/08/Salesforce-emblem.jpg");
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
 }
