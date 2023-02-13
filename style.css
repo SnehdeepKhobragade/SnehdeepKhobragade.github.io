@@ -11,7 +11,7 @@ body{
 #header{
     height: 100;
     width: 100;
-    background-image: url("C:\Users\HP\Downloads\personal-portfolio-img\images\sneh1.jpg");
+    background-image: url('C:\Users\HP\Downloads\personal-portfolio-img\images\sneh1.jpg');
     background-size: cover;
     background-position: center;
 }
