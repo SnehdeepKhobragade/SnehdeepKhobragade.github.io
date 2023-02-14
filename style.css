@@ -183,10 +183,18 @@ position: relative;
     cursor: pointer;
 }
 .container .services {
-    width: 33%;
+    width: 30%;
     float: left;
-    margin-top: 20px;
-    padding: 0px 76px;
+    margin: 20px;
+    padding: 62px 76px;
+    background: gray;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.container .services:hover {
+    background: red;
+    transform: translate(10px, 10px);
+    transition: 0.5s;
 }
 .services h2 {
     padding-bottom: 15px;
