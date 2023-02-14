@@ -1,133 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=egde">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="http://127.0.0.1:5500/logo.png" class="logo" alt="logo">
-               
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div> 
-    <div class="banner">
-        <div class="header-text">
-            <p>Salesforce Developer</p>
-            <h1>Hi, I'm <span>Snehdeep</span> Khobragade</h1>
-    </div>
-    <div class="header-img">
-        <img src="http://127.0.0.1:5500/sneh1.jpg">
-    </div>
-    </div>
-    <br>
-    <div id="about">
-        <div class="container">
-            <div class="about-pic">
-                <img src="http://127.0.0.1:5500/sneh3.jpg">
-            </div>
-            <div class="about-info">
-                <h1 class="sub-title">About me</h1>
-                <ul>
-                    <li>Insightful knowledge of Visual Force Page, Apex Class, Controller, RESTAPI (using 
-                        Workbench),Triggers and Lightning Web Component.</li>
-                    <li>Hands-on practice of building Custom Objects, Custom Fields, Custom Tabs, Object 
-                        Relationships,Page Layouts, Data Loaders(Workbench Platform).</li>
-                    <li>Hands-on practice of Validation Rules, Email Templates, Approval Process, Workflows, 
-                        Process Builder.</li>
-                    <li>Understanding of Reports and Dashboards.</li>
-                    <li>Good awareness of Object Oriented Programming.</li>
-                </ul>
-                <div class="wrapper">
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    
+    flex-wrap: wrap;
+}
+.header-img {
+    width: 32%;
+    float: right;
+}
 
-                    <div class="tabs">
-                      <div class="tab" data-tab-content="tab1-content">Skills</div>
-                      <div class="tab" data-tab-content="tab2-content">Experience</div>
-                      <div class="tab" data-tab-content="tab3-content">Education</div>
-                    </div>
-                  
-                    <div class="tab-content">
-                      <div class="tab-content-item" id="tab1-content">
-                        <li>LWC framework</li>
-                        <li>Aura framework</li>
-                        <li>VS code framework</li>
-                        <li>Visualforce</li>
-                        <li>HTML5/ CSS /JS</li>
-                        <li>Java</li>
-                        
-                      </div>
-                      <div class="tab-content-item" id="tab2-content">
-                        <li>Web Developer</li>
-                        <li>App Developement</li>
-                        <li>Salesforce Developer in VamriTech PVT LTD</li>
-                        <li>trainee in VamriTech PVT LTD</li>
-                      </div>
-                      <div class="tab-content-item" id="tab3-content">
-                        <li>BSC in Hospitality Management 78% with A Grade</li>
-                        <li>HSC in electronics</li>
-                        <li>SSC in Science</li>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------services------ -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list"></div>
-            <div class="services">
-                <h2>Web Designing</h2>
-                <p>A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used ..</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="services">
-                <h2>App Designing</h2>
-                <p>A app designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used ..</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="services">
-                <h2>UI / UX Designing</h2>
-                <p>A UI /UX designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used ..</p>
-                <a href="#">Learn more</a>
-            </div>
+.header-img img {
+    width: 100%;
+    padding: 25px;
+}
 
-        </div>
+.banner {
+    width: 100%;
+}
+.container{
 
-    </div>
-</body>
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 95px;;
+}
+nav ul li a:hover {
+    color: red;
+}
+.logo{
+    width: 140px;
 
-</html>
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:floralwhite;
+    text-decoration: none
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    padding: 277px 30px;
+    font-size: 30px;
+    width: 65%;
+    float: left;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+#about{
+    color: #ababab;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100;
+    border-radius: 15px;
+}
+.about-col-2 img{
+flex-basis: 60px;
+}
+.sub-title{
+font-size: 60px;
+font-weight: 600;
+color: #fff;
+
+}
+.tab-titles{
+    display:flexbox;
+    margin: 20px 0 40px;
+}
+.tab-links{
+margin-right: 50px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
 
 
+.about-pic {
+    width: 50%;
+    float: left;
+    clear: both;
+}
 
-<script>
-    const tabs = document.querySelectorAll('.tab');
-const tabContents = document.querySelectorAll('.tab-content-item');
+.about-info {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+.about-info ul li {
+    line-height: 28px;
+    margin-top: 10px;
+}
+.about-pic img {
+    width: 80%;
+    padding: 34px;
+}
+.tab-titles ul {
+    list-style: none;
+    display: block;
+}
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', function() {
-    // remove active class from all tabs and tab content
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tabContents.forEach(content => content.classList.remove('active'));
+.tab-titles ul li {
+    display: inline-block;
+    padding: 14px;
+}
 
-    // add active class to current tab and its corresponding tab content
-    this.classList.add('active');
-    document.getElementById(this.dataset.tabContent).classList.add('active');
-    event.currentTargetclassList.add("active-link");
-  });
-});
+.tab-content-item {
+    display: none;
+    max-width: 100%;
+    margin-top: -1px;
+    padding-inline: 20px;
+  }
+  
+  .tab-content-item.active {
+    display: block;
+  }
+  .tab.active {
+    color: red;
+}
+.tabs .tab:hover {
+    color: #0441ff;
+}
+.tabs .tab {
+    display: inline-block;
+    padding: 40px;
+    cursor: pointer;
+}
+.container .services {
+    width: 31%;
+    float: left;
+    padding: 72px 76px;
+    background: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+.services h2 {
+    padding-bottom: 15px;
+}
+#services{
+    padding: 30px 0;
+    display: inline-block;
+    padding: 40px;
+    cursor: pointer;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/*------------portfolio------------*/
+#portfolio{
+    padding: 50%;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr) );
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
 
-</script>
+}
