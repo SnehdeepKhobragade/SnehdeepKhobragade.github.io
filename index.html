@@ -6,6 +6,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="header">
@@ -15,9 +16,9 @@
                
                 <ul>
                     <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li id="cont"> <a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,7 +84,7 @@
             </div>
         </div>
     </div>
-    <!-- ------------services------ -->
+    <!-- ######services#######-->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -140,17 +141,13 @@
         `       <p>With Einstein Bots, you can launch a fully featured bot that integrates with your Salesforce data in a few clicks! Build one bot that can live on many channels—SMS, Chat, Slack, Facebook Messenger</p>
             </div>
             </div>
-    
+            <div class="seeMorebtn">
+                <a href="#." class="btn seeMore">See More</a>
+            </div>
         </div>
-        <div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    
-</body>
-
-</html>
-<!------------------contact------------>
-<div id="contact">
+       
+    <!--#####contact###########-->
+<div id="contact" style="display: none;">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -158,10 +155,10 @@
             <p>contact@gmail.com</p>
             <p>phone no.0771177117</p>
              <div class="social-icons">
-                <a href="">https://www.facebook.com<i class="fa-brands fa-facebook"></i></a>
-                <a href="">https://twitter.com/login?lang=en<i class="fa-brands fa-twitter-square"></i></a>
-                <a href="">https://www.instagram.com/<i class="fa-brands fa-instagram"></i></a>
-                <a href="">https://in.linkedin.com/<i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com"> <i class="fa fa-facebook-f"></i></a>
+                <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square"></i></a>
              </div>
         </div>
             <div class="contact-right"></div>
@@ -169,25 +166,9 @@
         </div>
     </div>
 </div>
+<script src="index.js"></script>
+</body>
+
+</html>
 
 
-
-<script>
-    const tabs = document.querySelectorAll('.tab');
-const tabContents = document.querySelectorAll('.tab-content-item');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', function() {
-    // remove active class from all tabs and tab content
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tabContents.forEach(content => content.classList.remove('active'));
-
-    // add active class to current tab and its corresponding tab content
-    this.classList.add('active');
-    document.getElementById(this.dataset.tabContent).classList.add('active');
-    event.currentTargetclassList.add("active-link");
-
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
-</script>

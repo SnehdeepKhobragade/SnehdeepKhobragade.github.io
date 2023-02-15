@@ -160,7 +160,9 @@ position: relative;
     display: inline-block;
     padding: 14px;
 }
-
+.myWorkContainer {
+    padding: 40px;
+}
 .tab-content-item {
     display: none;
     max-width: 100%;
@@ -176,11 +178,22 @@ position: relative;
 }
 .tabs .tab:hover {
     color: #0441ff;
+    background: red;
+    transition: 0.5s;
 }
 .tabs .tab {
     display: inline-block;
-    padding: 40px;
+    padding: 10px 30px;
     cursor: pointer;
+    border: 1px solid;
+    margin: 20px 10px;
+    transition: 0.5s;
+    background: grey;
+    color: #fff;
+    border-radius: 5px;
+}
+.tab.active {
+    color: red;
 }
 .container .services {
     width: 30%;
@@ -296,17 +309,36 @@ h1.myworkHeading {
     border-radius: 10px;
     transition: transform 0.5s;
 }
-.btn{
-    display: block;
-    margin: 50px auto;
+.seeMore{
+    width: 172px !important;
+    margin: 0 auto;
     width: fit-content;
     border: px solid #ff004f;
     padding: 20px 50px;
     border-radius: 6px;
     text-decoration: none;
     counter-reset: #ffffff;
-    transition: background 0.5s;
+    transition: 0.5s;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid;
+}
+.seeMorebtn {
+    text-align: center;
 }
 .btn:hover{
  background: #ff004f;
+}
+div#contact i {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+}
+div#contact i:hover {
+    color: red;
+}
+.ShowThis {
+    display: block !important;
 }

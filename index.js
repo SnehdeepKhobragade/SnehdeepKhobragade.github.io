@@ -1,6 +1,4 @@
-
-<script>
-    const tabs = document.querySelectorAll('.tab');
+const tabs = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tab-content-item');
 
 tabs.forEach(tab => {
@@ -13,7 +11,17 @@ tabs.forEach(tab => {
     this.classList.add('active');
     document.getElementById(this.dataset.tabContent).classList.add('active');
     event.currentTargetclassList.add("active-link");
+  });
+});
 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'>
-</script>
+
+
+var seeMore = document.querySelector('.seeMore');
+seeMore.addEventListener('click' , function(){
+    document.getElementById('contact').classList.add("ShowThis");
+})
+
+var contact = document.querySelector('#cont');
+contact.addEventListener('click' , function(){
+    document.getElementById('contact').classList.add("ShowThis");
+})
