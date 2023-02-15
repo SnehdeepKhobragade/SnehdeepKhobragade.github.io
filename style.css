@@ -212,7 +212,7 @@ position: relative;
 .myworksection {
     margin: 30px;
     padding: 50px;
-    height: 336px;
+    height: 347px;
 }
 .myWorkSectionmain1, .myWorkSectionmain2, .myWorkSectionmain3 {
     position: relative;
@@ -243,11 +243,13 @@ position: relative;
 .my-work-details {
     margin: 0 auto;
     width: 88%;
-    height: 336px;
+    height: 347px;
     opacity: 0;
     -webkit-transform: translate3d(0, -15px, 0);
             transform: translate3d(0, -15px, 0);
     -webkit-transition: all 150ms linear;
+    border-radius: 10px;
+    transition: height 0.5s;
     -o-transition: all 150ms linear;
     transition: all 150ms linear;
     font-size: 1.0625rem;
@@ -257,6 +259,7 @@ position: relative;
     pointer-events: none;
     background: #ff00008c;
     padding: 90px 20px;
+
 }
 h1.myworkHeading {
     font-size: 60px;
@@ -270,16 +273,40 @@ h1.myworkHeading {
     visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+            border-radius: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 .work-main-section1 {
    background: url("new.jpg");
    background-size: 100% 100%;
+   border-radius: 10px;
+    transition: 0.5s;
 }
 .work-main-section2 {
     background: url("API.jpg");
     background-size: 100% 100%;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 .work-main-section3 {
     background: url("robot.jpg");
     background-size: 100% 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: px solid #ff004f;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    counter-reset: #ffffff;
+    transition: background 0.5s;
+}
+.btn:hover{
+ background: #ff004f;
 }
