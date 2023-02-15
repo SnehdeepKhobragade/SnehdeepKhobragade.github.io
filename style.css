@@ -354,6 +354,5 @@ contact-left p{
 }
 .btn.btn{
    display: inline-block;
-   columns: #ff004f;
-   border: px solid;  
+   columns: #ff004f; 
 }
