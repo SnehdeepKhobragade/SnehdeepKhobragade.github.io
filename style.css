@@ -291,7 +291,7 @@ h1.myworkHeading {
     transition: 0.5s;
 }
 .work-main-section1 {
-   background: url("new.jpg");
+   background: url("new.jpeg");
    background-size: 100% 100%;
    border-radius: 10px;
     transition: 0.5s;
@@ -303,7 +303,7 @@ h1.myworkHeading {
     transition: 0.5s;
 }
 .work-main-section3 {
-    background: url("robot.jpg");
+    background: url("robot.jpeg");
     background-size: 100% 100%;
     border-radius: 10px;
     transition: transform 0.5s;
