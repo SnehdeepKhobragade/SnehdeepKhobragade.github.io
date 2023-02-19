@@ -280,7 +280,6 @@ h1.myworkHeading {
     color: #fff;
     margin-left: 30px;
 }
-    
 .myworksection:hover + .my-work-details {
     opacity: 1;
     visibility: visible;
